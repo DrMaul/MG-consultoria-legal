@@ -1,0 +1,49 @@
+---
+import ServiceItem from './ServiceItem.astro'
+import LaboralIcon from '../icons/Laboral.astro'
+import FamiliaIcon from '../icons/Familia.astro'
+import PrevisionalIcon from '../icons/Previsional.astro'
+import CivilIcon from '../icons/Civil.astro'
+
+const SERVICES = [
+    {
+        name: "Laboral",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde error nisi accusamus atque ea, voluptatum quibusdam nobis culpa esse illo, provident doloremque assumenda quasi sit mollitia iste repellat. Reiciendis, at.",
+        icon:LaboralIcon,
+        asunto:"Solicitud servicio - Laboral",
+        mensaje:"Buenas tardes, me pongo en contacto para solicitar sus servicios de {...}... {Favor de adjuntar su información de contacto de ser necesario}"
+    },
+    {
+        name: "Familia",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde error nisi accusamus atque ea, voluptatum quibusdam nobis culpa esse illo, provident doloremque assumenda quasi sit mollitia iste repellat. Reiciendis, at.",
+        icon:FamiliaIcon,
+        asunto:"Solicitud servicio - Familia",
+        mensaje:"Buenas tardes, me pongo en contacto para solicitar sus servicios de {...}... {Favor de adjuntar su información de contacto de ser necesario}"
+    
+    },
+    {
+        name: "Previsional",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde error nisi accusamus atque ea, voluptatum quibusdam nobis culpa esse illo, provident doloremque assumenda quasi sit mollitia iste repellat. Reiciendis, at.",
+        icon:PrevisionalIcon,
+        asunto:"Solicitud servicio - Otro",
+        mensaje:"Buenas tardes, me pongo en contacto para solicitar sus servicios de {...}... {Favor de adjuntar su información de contacto de ser necesario}"
+    
+    },
+    {
+        name: "Civil",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde error nisi accusamus atque ea, voluptatum quibusdam nobis culpa esse illo, provident doloremque assumenda quasi sit mollitia iste repellat. Reiciendis, at.",
+        icon:CivilIcon,
+        asunto:"Solicitud servicio - Otro",
+        mensaje:"Buenas tardes, me pongo en contacto para solicitar sus servicios de {...}... {Favor de adjuntar su información de contacto de ser necesario}"
+    
+    }
+]
+---
+<div class="grid md:grid-cols-4 gap-4 my-4 ">
+    {SERVICES.map((service) => (
+        
+        <ServiceItem {... service} />
+        
+        )) }   
+
+</div>

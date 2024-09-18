@@ -1,0 +1,45 @@
+---
+import SocialBadge from "./SocialBadge.astro"
+import FacebookIcon from "../icons/Facebook.astro"
+import InstagramIcon from "../icons/Instagram.astro"
+import LinkedinIcon from "../icons/Linkedin.astro"
+import MapIcon from "../icons/Map.astro"
+import Button from "../components/Button.astro"
+---
+
+<div class="flex flex-col items-center md:flex-row md:justify-between md:items-start ">
+    <div class="md:w-2/3 mx-4">
+        <p class="text-blue-950">Soy Alejandra Gutierrez, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id quas quo deserunt mollitia ducimus corrupti inventore? Necessitatibus dolores molestiae doloremque aliquid facere, officiis illo veritatis, ullam incidunt consequuntur nulla facilis.
+        Ea quod explicabo fugit sequi iste consectetur corrupti autem, voluptatem quae delectus iusto temporibus maxime voluptates dolorem vel cumque sunt ad accusantium ducimus doloremque neque! Alias deleniti amet quidem. Ducimus?</p>
+    </div>
+    <div class="w-full mb-4 md:w-1/3 border border-white/10  rounded-lg shadow bg-black/20" >
+        <div class="flex flex-col items-center py-10">
+            <img class="w-30 h-36 mb-3 rounded-full shadow-lg" src="/images/profile_picture_MG.webp" alt="Alejandra Gutierrez photo"/>
+            <h4 class="mb-1 text-xl font-medium text-blue-950">Alejandra Gutierrez</h4>
+            <h5 class="text-sm text-blue-950">Abogada</h5>
+            <div class="flex items-center mt-4 md:mt-6">
+                <MapIcon class="size-4 md:size-6" stroke="#172554"/>
+                <p class="py-2 ms-2 text-sm text-blue-950 font-medium">Haedo, Buenos Aires, Argentina</p> 
+            </div>
+            <nav class="flex gap-4 mt-2">
+                    
+                <SocialBadge href="#">
+                    <FacebookIcon class="size-4 md:size-6" stroke="#172554"/>
+                </SocialBadge>
+            
+                <SocialBadge href="#">
+                    <InstagramIcon class="size-4 md:size-6" stroke="#172554"/>
+                </SocialBadge>
+
+                <SocialBadge href="#">
+                    <LinkedinIcon class="size-4 md:size-6" stroke="#172554"/>
+                </SocialBadge>
+    
+            </nav>
+
+            <Button href="#contacto">
+                Contacto
+            </Button>
+        </div>
+    </div>
+</div>
