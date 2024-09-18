@@ -19,36 +19,31 @@ import Contact from '../components/Contact.astro'
 							<svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
 								<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
 							</svg>
-						</a>  
-
-						
+						</a>
 					</div>
 				</div>
 		</SectionContainer>
 
+		
+
 		<SectionContainer id="sobre-mi" class="pb-12">
-			<h2 class="text-3xl text-blue-950 font-semibold mb-6 flex gap-x-3 items-center">
-				<!-- <UserIcon class="size-8"/> -->
-				Sobre mí
-			</h2>
+			<h2 class="text-3xl text-customBlue font-semibold mb-6 text-center lg:text-start">Sobre mí</h2>
 			<Aboutme />
 		</SectionContainer>
 
+		<hr class="mt-0 mb-2 border-customGray/10 mx-auto" />
+
 		<SectionContainer id="servicios">
-			<h2 class="text-3xl text-blue-950 font-semibold mb-6 flex gap-x-3 items-center">
-				<!-- <ServicesIcon class="size-8"/> -->
-				Servicios
-			</h2>
+			<h2 class="text-3xl text-customBlue font-semibold mb-6 text-center lg:text-start">Servicios</h2>
 			<Services />
 		</SectionContainer>
+		<hr class="mt-0 mb-2 border-customGray/10 mx-auto" />
 
 		<SectionContainer id="contacto">
-			<h2 class="text-3xl text-blue-950 font-semibold mb-6 flex gap-x-3 items-center">
-				<!-- <ContactIcon class="size-8"/> -->
-				Contacto
-			</h2>
+			<h2 class="text-3xl text-customBlue font-semibold mb-6 text-center lg:text-start">Contacto</h2>
 			<Contact />
 		</SectionContainer>
+
 		
 	</main>
 </Layout>
