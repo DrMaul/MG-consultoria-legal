@@ -1,15 +1,21 @@
 ---
-const {name, description,icon: IconComponent, asunto, mensaje} = Astro.props
+const {name, description,icon: IconComponent, asunto} = Astro.props
+
+const mensaje = "Buenas tardes, me pongo en contacto para solicitar asesoramiento sobre sus servicios. {Favor de adjuntar su información de contacto de ser necesario, a la brevedad te responderemos. Muchas gracias.}"
+
 import Button from "../components/Button.astro"
 ---
 
 <div class="border bg-customBrown border-customBlue/10  rounded-lg shadow  hover:bg-customBrown/10 transition">
-    <div class="flex flex-col items-center py-5 px-2">
-        <IconComponent class="size-10" stroke="#30475e"/>
-        <h4 class="mb-1 text-xl text-customBlue font-medium text-center">{name}</h4>
-        <p class="ms-2 text-center text-customBlue text-xs font-light opacity-80">{description}</p> 
+    <div class="flex flex-col justify-between items-center py-5 px-2 h-full">
+        <div class="flex-grow flex flex-col items-center">
+            <IconComponent class="size-10" stroke="#30475e" />
+            <h4 class="mb-1 text-xl text-customBlue font-medium text-center">{name}</h4>
+            <p class="ms-2 text-center text-customBlue text-m font-light">{description}</p>
+        </div>
         <Button href={`mailto:gutierrezmariaalejandra@hotmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(mensaje)}`}>
             Consultar Servicio
         </Button>
     </div>
+    
 </div>
